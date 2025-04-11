@@ -129,6 +129,15 @@ nav a:active {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.profile-photo {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #99e4e9;
+}
+
 .icon-container {
   width: 60px;
   height: 60px;
@@ -249,20 +258,34 @@ nav a:active {
 }
 
 footer {
-  margin-top: 30px;
-  display: flex;
-  gap: 30px;
-  align-items: center;
+  margin-top: 60px;
 }
 
 #contact {
   max-width: 1000px;
-  margin: 60px auto;
+  margin: 0 auto 40px auto;
   padding: 0 20px;
 }
 
 .footer-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.contact-message {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   gap: 30px;
 }
@@ -272,6 +295,11 @@ footer {
   color: #0f2b46;
   text-decoration: none;
   font-weight: bold;
+  line-height: 1;
+}
+
+.icon:hover {
+  color: #99e4e9;
 }
 
 /* Make the site responsive */
