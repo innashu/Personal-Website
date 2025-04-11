@@ -300,6 +300,10 @@ footer {
     font-size: 0.95rem;
   }
 
+  .highlight.hover-effect:hover::before {
+    background-color: transparent;
+  }
+
   .intro {
     flex-direction: column;
     text-align: center;
