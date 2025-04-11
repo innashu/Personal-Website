@@ -278,8 +278,13 @@ footer {
 .contact-message {
   font-size: 1.2rem;
   color: #777;
-  margin-bottom: 0;
   font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+  font-family: inherit;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 .footer-icons {
