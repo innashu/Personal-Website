@@ -186,8 +186,9 @@ nav a:active {
   padding: 0 20px;
 }
 
-.experience-section h3,
-.passions-section h3 {
+
+section h3,
+footer h3 {
   font-size: 1.5rem;
   color: #0f2b46;
   font-weight: 700;
@@ -263,16 +264,16 @@ footer {
 
 #contact {
   max-width: 1000px;
-  margin: 0 auto 40px auto;
+  margin: 60px auto 40px auto;
   padding: 0 20px;
+  text-align: left; 
 }
 
 .footer-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
+  align-items: flex-start; 
+  gap: 16px;
 }
 
 .contact-message {
@@ -281,30 +282,27 @@ footer {
   font-weight: 400;
   line-height: 1.5;
   margin: 0;
-  text-align: center;
-  font-family: inherit;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
 }
 
 .footer-icons {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 24px; /* softened the spacing just slightly for polish */
 }
 
 .icon {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #0f2b46;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: bold;
   line-height: 1;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .icon:hover {
   color: #99e4e9;
+  transform: scale(1.05);
 }
 
 /* Make the site responsive */
@@ -361,11 +359,12 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .footer-container {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the left */
+  gap: 16px;
+}
 
   .about,
   .experience-section,
