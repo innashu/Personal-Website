@@ -186,7 +186,6 @@ nav a:active {
   padding: 0 20px;
 }
 
-
 section h3,
 footer h3 {
   font-size: 1.5rem;
@@ -266,13 +265,13 @@ footer {
   max-width: 1000px;
   margin: 60px auto 40px auto;
   padding: 0 20px;
-  text-align: left; 
+  text-align: left;
 }
 
 .footer-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: flex-start;
   gap: 16px;
 }
 
@@ -359,16 +358,16 @@ footer {
     grid-template-columns: 1fr;
   }
 
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Align content to the left */
-  gap: 16px;
-}
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
 
-  .about,
-  .experience-section,
-  .passions-section {
+  .about h3,
+  .experience-section h3,
+  .passions-section h3 {
     text-align: center;
   }
 }
