@@ -23,7 +23,7 @@ body {
     color: var(--body);
     font-family: "Inter", system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     line-height: 1.6;
 }
 
@@ -56,7 +56,7 @@ body {
 
 /* ---- Header ---- */
 h1 {
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     font-weight: 700;
     line-height: 1.1;
     color: var(--navy);
@@ -88,11 +88,11 @@ h1 {
 
 /* ---- Sections ---- */
 section {
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     font-weight: 700;
     margin-bottom: 24px;
     color: var(--navy);
@@ -113,6 +113,35 @@ p:last-child {
     margin-bottom: 24px;
 }
 
+/* ---- Lists (Fun Facts) ---- */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    color: var(--body);
+    margin-bottom: 14px;
+    padding-left: 22px;
+    position: relative;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 7px;
+    height: 7px;
+    background: var(--teal);
+    transform: skew(-10deg);
+    border-radius: 1px;
+}
+
 /* ---- Inline links ---- */
 a.link {
     color: var(--navy);
@@ -125,12 +154,12 @@ a.link {
     transition: background-size .25s ease;
 }
 
-.exp a.link {
-    color: #1a73e8;   /* blue, Experience only */
-}
-
 a.link:hover {
     background-size: 100% 2px;
+}
+
+.exp a.link {
+    color: #1a73e8;   /* blue, Experience only */
 }
 
 /* ---- Experience ---- */
@@ -192,7 +221,7 @@ a:focus-visible {
 /* ---- Responsive ---- */
 @media (max-width: 560px) {
     body {
-        font-size: 1.05rem;
+        font-size: 0.95rem;
         line-height: 1.62;
     }
 
@@ -201,15 +230,15 @@ a:focus-visible {
     }
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.65rem;
     }
 
     h2 {
-        font-size: 1.35rem;
+        font-size: 1.25rem;
         margin-bottom: 20px;
     }
 
     section {
-        margin-top: 48px;
+        margin-top: 34px;
     }
 }
